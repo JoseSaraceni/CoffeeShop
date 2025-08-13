@@ -1,9 +1,8 @@
 package com.example.coffeeshop.Activity.Domain
 
-import android.accessibilityservice.GestureDescription
 import java.io.Serializable
 
-data class PopularModel (
+data class ItemsModel (
     var title : String="",
     var description : String="",
     var picUrl : ArrayList<String> = ArrayList(),

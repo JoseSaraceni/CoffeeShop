@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.coffeeshop.Activity.DetailActivity
-import com.example.coffeeshop.Activity.Domain.PopularModel
+import com.example.coffeeshop.Activity.Domain.ItemsModel
 import com.example.coffeeshop.databinding.ViewholderPopularBinding
 
 
-class PopularAdapter(val items : MutableList<PopularModel>): RecyclerView.Adapter<PopularAdapter.Viewholder>() {
+class PopularAdapter(val items : MutableList<ItemsModel>): RecyclerView.Adapter<PopularAdapter.Viewholder>() {
     lateinit var context: Context
 
     class Viewholder(val binding: ViewholderPopularBinding) : RecyclerView.ViewHolder(binding.root)
