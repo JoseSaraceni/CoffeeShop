@@ -55,7 +55,7 @@
                     android:id="@+id/imgBell"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginStart="170dp"
+                    android:layout_marginStart="184dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/brown_bell_background"
                     android:padding="5dp"
@@ -71,8 +71,8 @@
 
                 <!-- Icone de pesquisa -->
                 <EditText
-                    android:layout_width="300dp"
-                    android:layout_height="30dp"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/white_edittext_background"
                     android:drawableStart="@drawable/search_icon"
@@ -142,7 +142,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvCategory"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="80dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -196,7 +196,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvPopular"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

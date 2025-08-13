@@ -65,4 +65,6 @@ dependencies {
 
     implementation ("com.github.bumptech.glide:glide:4.15.1")
 
+    implementation ("com.google.code.gson:gson:2.13.1")
+
 }

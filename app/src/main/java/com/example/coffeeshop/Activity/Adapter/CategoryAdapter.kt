@@ -9,6 +9,8 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import android.view.LayoutInflater
+import androidx.core.content.ContextCompat
+import com.example.coffeeshop.Activity.ItemsListActivity
 import com.example.coffeeshop.R
 
 class CategoryAdapter(val items: MutableList<CategoryModel>) : RecyclerView.Adapter<CategoryAdapter.Viewholder>() {
@@ -38,7 +40,11 @@ class CategoryAdapter(val items: MutableList<CategoryModel>) : RecyclerView.Adap
             notifyItemChanged(selectedPosition)
 
             Handler(Looper.getMainLooper()).postDelayed({
-
+                val intent= Intent(context, ItemsListActivity::class.java).apply{
+                    putExtra("id",item.id.toString())
+                    putExtra("title",item.title.toString())
+                }
+                ContextCompat.startActivity(context,intent,null)
             },500)
         }
 
